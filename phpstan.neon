@@ -1,0 +1,20 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 5
+    paths:
+        - src
+    databaseMigrationsPath:
+        - database/migrations
+    ignoreErrors:
+        # RecordsBackupEvents bridges spatie/laravel-backup v9 and v10, whose
+        # event payloads differ. PHPStan only sees the installed major, so the
+        # other major's property access and the version guards read as
+        # undefined / always-true.
+        -
+            path: src/Listeners/RecordsBackupEvents.php
+            identifier: property.notFound
+        -
+            path: src/Listeners/RecordsBackupEvents.php
+            identifier: function.alreadyNarrowedType
