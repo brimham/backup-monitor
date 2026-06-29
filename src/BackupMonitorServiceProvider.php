@@ -13,7 +13,7 @@ class BackupMonitorServiceProvider extends ServiceProvider
         // Ship the migration with the package so a host app gets the table
         // on `php artisan migrate`. Add ->publishesMigrations() later if you
         // want hosts to be able to customise it.
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         // Start recording backup events the moment the package boots.
         Event::subscribe(RecordsBackupEvents::class);
