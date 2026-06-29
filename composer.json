@@ -11,12 +11,12 @@
         "backup-monitor"
     ],
     "require": {
-        "php": "^8.2",
-        "illuminate/contracts": "^11.0 || ^12.0",
-        "illuminate/database": "^11.0 || ^12.0",
-        "illuminate/events": "^11.0 || ^12.0",
-        "illuminate/support": "^11.0 || ^12.0",
-        "spatie/laravel-backup": "^8.0 || ^9.0"
+        "php": "^8.3",
+        "illuminate/contracts": "^12.0 || ^13.0",
+        "illuminate/database": "^12.0 || ^13.0",
+        "illuminate/events": "^12.0 || ^13.0",
+        "illuminate/support": "^12.0 || ^13.0",
+        "spatie/laravel-backup": "^9.0 || ^10.0"
     },
     "autoload": {
         "psr-4": {
@@ -27,6 +27,23 @@
         "psr-4": {
             "Brimham\\BackupMonitor\\Tests\\": "tests/"
         }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0 || ^11.0",
+        "pestphp/pest": "^3.0 || ^4.0",
+        "pestphp/pest-plugin-laravel": "^3.0 || ^4.0",
+        "laravel/pint": "^1.29",
+        "larastan/larastan": "^3.10"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "lint": "pint",
+        "analyse": "phpstan analyse"
     },
     "extra": {
         "laravel": {
