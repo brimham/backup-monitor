@@ -8,9 +8,9 @@ This is the free core. It records runs and exposes them for display. Alerting on
 
 ## Requirements
 
-- PHP 8.2+
-- Laravel 11 or 12
-- spatie/laravel-backup 8 or 9
+- PHP 8.3+
+- Laravel 12 or 13
+- spatie/laravel-backup 9 or 10
 
 ## Installation
 
