@@ -1,0 +1,40 @@
+{
+    "name": "brimham/backup-monitor",
+    "description": "Records and surfaces the health and history of your spatie/laravel-backup runs.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "backup",
+        "monitoring",
+        "spatie",
+        "backup-monitor"
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^11.0 || ^12.0",
+        "illuminate/database": "^11.0 || ^12.0",
+        "illuminate/events": "^11.0 || ^12.0",
+        "illuminate/support": "^11.0 || ^12.0",
+        "spatie/laravel-backup": "^8.0 || ^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brimham\\BackupMonitor\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brimham\\BackupMonitor\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brimham\\BackupMonitor\\BackupMonitorServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
