@@ -35,6 +35,9 @@
         "laravel/pint": "^1.29",
         "larastan/larastan": "^3.10"
     },
+    "suggest": {
+        "brimham/filament-backup-monitor": "A Filament panel (run history + per-destination health) for your backup runs"
+    },
     "config": {
         "allow-plugins": {
             "pestphp/pest-plugin": true

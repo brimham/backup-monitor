@@ -6,6 +6,8 @@ Spatie's backup package and the existing Filament backup plugins are **stateless
 
 This is the free core. It records runs and exposes them for display. Alerting on missed/silent failures, multi-channel notifications, and a multi-site dashboard are part of the separate Pro package.
 
+> **Using Filament?** [`brimham/filament-backup-monitor`](https://github.com/brimham/filament-backup-monitor) adds a ready-made panel on top of this package — a run-history table and a "last backup per destination" health view.
+
 ## Requirements
 
 - PHP 8.3+
