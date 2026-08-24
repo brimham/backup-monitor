@@ -53,7 +53,7 @@ $failures = BackupRun::query()->failed()->latest()->take(20)->get();
 This core package answers *"did my backups run?"* after the fact. It can't tell you when a
 scheduled backup **silently stops running** — there's no event to record, so nothing lands in the
 table. That's the failure that actually loses data, and it's what
-[**Brimham Backup Monitor Pro**](https://brimham.app) is built to catch.
+[**Brimham Backup Monitor Pro**](https://brimham.app/plugins/backup-monitor-pro) is built to catch.
 
 Pro builds on this package and adds:
 
@@ -69,7 +69,7 @@ Pro builds on this package and adds:
   [collector](https://github.com/brimham/filament-backup-monitor-collector) and watch all your
   sites from one panel. Ideal for agencies.
 
-[**Get Pro →**](https://brimham.app)
+[**Get Pro →**](https://brimham.app/plugins/backup-monitor-pro)
 
 ## License
 

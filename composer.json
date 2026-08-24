@@ -3,6 +3,11 @@
     "description": "Records and surfaces the health and history of your spatie/laravel-backup runs.",
     "type": "library",
     "license": "MIT",
+    "homepage": "https://brimham.app",
+    "support": {
+        "issues": "https://github.com/brimham/backup-monitor/issues",
+        "source": "https://github.com/brimham/backup-monitor"
+    },
     "keywords": [
         "laravel",
         "backup",
@@ -36,7 +41,8 @@
         "larastan/larastan": "^3.10"
     },
     "suggest": {
-        "brimham/filament-backup-monitor": "A Filament panel (run history + per-destination health) for your backup runs"
+        "brimham/filament-backup-monitor": "A Filament panel (run history + per-destination health) for your backup runs",
+        "brimham/backup-monitor-pro": "Missed-backup detection and multi-channel alerts on top of this run history (paid)"
     },
     "config": {
         "allow-plugins": {
